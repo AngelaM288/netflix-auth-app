@@ -5,6 +5,8 @@ frontend/build/
 
 # Ignorar archivos de backend
 backend/
+**/venv/
+
 
 # Ignorar carpetas de producción de React
 frontend/build/

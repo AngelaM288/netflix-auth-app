@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'users',
     'corsheaders',
-    'movies',
-   
 ]
 
 # Agregar configuracion JWT

@@ -12,7 +12,7 @@ const Login = ({ setToken }) => {
         e.preventDefault();
         const url = isRegistering 
             ? 'http://localhost:8000/api/register/'
-            : 'http://localhost:8000/api/login/';
+            : 'http://localhost:8000/api/token/';
 
         try {
             const response = await axios.post(url, { 

@@ -1,12 +1,18 @@
-//scr/App.js
-import React from "react";
 import './App.css';
-import Login from "./Login";
+import React, { useState } from 'react';
+import MovieGallery from './MovieGallery';
+import Login from './Login';
 
 function App() {
+  const [token, setToken] = useState(null);
+
   return (
     <div className="App">
-      <Login />
+      {!token ? (
+        <Login setToken={setToken} />
+      ) : (
+        <MovieGallery token={token} />
+      )}
     </div>
   );
 }
